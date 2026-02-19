@@ -1,0 +1,18 @@
+{
+  "learning_rate": 3e-05,
+  "gamma": 0.98,
+  "gae_lambda": 0.9,
+  "n_steps": 2048,
+  "batch_size": 64,
+  "n_epochs": 5,
+  "clip_range": 0.1,
+  "ent_coef": 0.0,
+  "vf_coef": 0.7,
+  "max_grad_norm": 0.5,
+  "policy_kwargs": {
+    "net_arch": [
+      64,
+      64
+    ]
+  }
+}

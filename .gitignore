@@ -1,1 +1,18 @@
 .venv_taap_p2/
+
+# --- Python bytecode ---
+__pycache__/
+*.py[cod]
+
+# --- Virtual environments (common names) ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- If your venv folder is literally inside the repo (Windows layout) ---
+Lib/
+Scripts/
+Include/
+pyvenv.cfg
+share/
