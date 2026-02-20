@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LunarLander DAgger</title>
+    <link rel="stylesheet" href="/static/lunar_client.css">
+    <script src="/static/socket.io.min.js"></script>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header-left">
+                <h1 class="title">LunarLander <span class="title-accent">DAgger</span></h1>
+                <div class="connection" id="connectionStatus">
+                    <span class="connection-dot"></span>
+                    <span class="connection-text">Disconnected</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="stat-group">
+                    <div class="stat" id="episodeStat">
+                        <span class="stat-label">Episode</span>
+                        <span class="stat-value">0</span>
+                    </div>
+                    <div class="stat" id="stepStat">
+                        <span class="stat-label">Step</span>
+                        <span class="stat-value">0</span>
+                    </div>
+                    <div class="stat" id="rewardStat">
+                        <span class="stat-label">Reward</span>
+                        <span class="stat-value">0.00</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="viewport">
+                <canvas id="frameCanvas" width="600" height="400"></canvas>
+                <div class="viewport-overlay" id="viewportOverlay">
+                    <span>Press any arrow key to begin</span>
+                </div>
+            </div>
+
+            <aside class="sidebar">
+                <section class="panel state-panel">
+                    <h2 class="panel-title">State Vector</h2>
+                    <div class="state-grid" id="stateGrid">
+                        <div class="state-item"><span class="state-label">X Pos</span><span class="state-val" id="s0">0.00</span></div>
+                        <div class="state-item"><span class="state-label">Y Pos</span><span class="state-val" id="s1">0.00</span></div>
+                        <div class="state-item"><span class="state-label">X Vel</span><span class="state-val" id="s2">0.00</span></div>
+                        <div class="state-item"><span class="state-label">Y Vel</span><span class="state-val" id="s3">0.00</span></div>
+                        <div class="state-item"><span class="state-label">Angle</span><span class="state-val" id="s4">0.00</span></div>
+                        <div class="state-item"><span class="state-label">Ang Vel</span><span class="state-val" id="s5">0.00</span></div>
+                        <div class="state-item"><span class="state-label">L Leg</span><span class="state-val" id="s6">0</span></div>
+                        <div class="state-item"><span class="state-label">R Leg</span><span class="state-val" id="s7">0</span></div>
+                    </div>
+                </section>
+
+                <section class="panel action-panel">
+                    <h2 class="panel-title">Action</h2>
+                    <div class="action-display">
+                        <div class="action-key" id="actionLeft" data-action="1">&larr;</div>
+                        <div class="action-key" id="actionMain" data-action="2">&uarr;</div>
+                        <div class="action-key" id="actionRight" data-action="3">&rarr;</div>
+                        <div class="action-key" id="actionNoop" data-action="0">_</div>
+                    </div>
+                    <div class="action-labels">
+                        <span>Left</span>
+                        <span>Main</span>
+                        <span>Right</span>
+                        <span>Noop</span>
+                    </div>
+                </section>
+
+                <section class="panel history-panel">
+                    <h2 class="panel-title">Episode History</h2>
+                    <div class="history-list" id="historyList">
+                        <div class="history-empty">No episodes yet</div>
+                    </div>
+                </section>
+
+                <div class="controls">
+                    <button class="btn" id="resetBtn">Reset Episode</button>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <script src="/static/lunar_client.js"></script>
+</body>
+</html>
