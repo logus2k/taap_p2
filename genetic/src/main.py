@@ -28,7 +28,18 @@ def main():
     os.makedirs("assets/figures", exist_ok=True)
     os.makedirs("assets/gifs", exist_ok=True)
 
-    ga = GeneticAlgorithm(input_size, hidden1_size, hidden2_size, output_size, population_size, mutation_rate, render, arg.workers)
+    ga = GeneticAlgorithm(
+        input_size, 
+        hidden1_size, 
+        hidden2_size, 
+        output_size,
+        population_size, 
+        mutation_rate, 
+        render, 
+        arg.workers,
+        generations=generations
+    )
+
     best_fitness_history = []
     avg_fitness_history = []
     worst_fitness_history = []
