@@ -3,12 +3,7 @@ import random
 
 from evolution.genome import create_genome
 from evolution.parallel_evaluator import ParallelEvaluator
-
-
-def compute_genome_size(input_size, hidden1_size, hidden2_size, output_size):
-    return (input_size * hidden1_size + hidden1_size +
-            hidden1_size * hidden2_size + hidden2_size +
-            hidden2_size * output_size + output_size)
+from evolution.utils import compute_genome_size
 
 
 class GeneticAlgorithm:
