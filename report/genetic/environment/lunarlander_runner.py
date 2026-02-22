@@ -2,7 +2,7 @@ import gymnasium as gym
 import numpy as np
 import random
 import imageio.v2 as imageio
-from evolution.neural_network import NeuralNetwork
+from genetic.evolution.neural_network import NeuralNetwork
 
 
 def evaluate_genome(genome, input_size, hidden1_size, hidden2_size, output_size, n_genome, generation, seeds, render=False):

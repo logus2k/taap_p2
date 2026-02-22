@@ -1,6 +1,6 @@
 import os
 from concurrent.futures import ProcessPoolExecutor
-from environment.lunarlander_runner import evaluate_genome
+from genetic.environment.lunarlander_runner import evaluate_genome
 
 
 def _evaluate_single(args):

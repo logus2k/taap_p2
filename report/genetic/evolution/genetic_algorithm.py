@@ -1,9 +1,9 @@
 import numpy as np
 import random
 
-from evolution.genome import create_genome
-from evolution.parallel_evaluator import ParallelEvaluator
-from evolution.utils import compute_genome_size
+from genetic.evolution.genome import create_genome
+from genetic.evolution.parallel_evaluator import ParallelEvaluator
+from genetic.evolution.utils import compute_genome_size
 
 
 class GeneticAlgorithm:

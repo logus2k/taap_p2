@@ -1,6 +1,6 @@
 import numpy as np
 
-from evolution.utils import compute_genome_size
+from genetic.evolution.utils import compute_genome_size
 
 
 def create_genome(input_size, hidden1_size, hidden2_size, output_size):
