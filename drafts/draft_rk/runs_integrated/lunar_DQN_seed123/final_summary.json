@@ -1,0 +1,22 @@
+{
+  "algo": "DQN",
+  "seed": 123,
+  "run_dir": "runs_integrated\\lunar_DQN_seed123",
+  "final_model_path": "runs_integrated\\lunar_DQN_seed123\\final_model.zip",
+  "best_model_path": "runs_integrated\\lunar_DQN_seed123\\best_model\\best_model.zip",
+  "quick20_mean": 274.20835969999996,
+  "quick20_std": 31.795453489649226,
+  "quick20_success_rate": 0.95,
+  "quick20_nsuccess": 19,
+  "quick20_max": 319.488969,
+  "quick20_p90": 298.1123551,
+  "quick20_p50": 283.24374,
+  "solved_consecutive_100": true,
+  "first_solved_end_ep": 100,
+  "best_roll100": 271.5653559516806,
+  "final_roll100": 263.43766152614916,
+  "success_rate_last100": 0.93,
+  "max_ep_reward_400": 321.0069275195082,
+  "best_window_start": 27,
+  "best_window_min": 63.80342304438264
+}

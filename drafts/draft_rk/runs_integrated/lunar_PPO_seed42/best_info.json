@@ -1,0 +1,8 @@
+{
+  "algo": "PPO",
+  "seed": 42,
+  "best_metric": 281.06348157126115,
+  "best_step": 2000000,
+  "best_model_path": "runs_integrated\\lunar_PPO_seed42\\best_model\\best_model.zip",
+  "curves_path": "runs_integrated\\lunar_PPO_seed42\\curves.npz"
+}

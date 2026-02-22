@@ -1,0 +1,22 @@
+{
+  "algo": "PPO",
+  "seed": 42,
+  "run_dir": "runs_integrated\\lunar_PPO_seed42",
+  "final_model_path": "runs_integrated\\lunar_PPO_seed42\\final_model.zip",
+  "best_model_path": "runs_integrated\\lunar_PPO_seed42\\best_model\\best_model.zip",
+  "quick20_mean": 274.53280865,
+  "quick20_std": 24.064178458600253,
+  "quick20_success_rate": 1.0,
+  "quick20_nsuccess": 20,
+  "quick20_max": 315.213856,
+  "quick20_p90": 301.6831995,
+  "quick20_p50": 278.8363335,
+  "solved_consecutive_100": true,
+  "first_solved_end_ep": 100,
+  "best_roll100": 284.30802790582476,
+  "final_roll100": 282.71370602243525,
+  "success_rate_last100": 1.0,
+  "max_ep_reward_400": 322.85877529581296,
+  "best_window_start": 267,
+  "best_window_min": 169.18852980450256
+}

@@ -1,0 +1,8 @@
+{
+  "algo": "DQN",
+  "seed": 42,
+  "best_metric": 218.48435069063865,
+  "best_step": 1000000,
+  "best_model_path": "runs_integrated\\lunar_DQN_seed42\\best_model\\best_model.zip",
+  "curves_path": "runs_integrated\\lunar_DQN_seed42\\curves.npz"
+}
