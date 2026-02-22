@@ -16,3 +16,9 @@ Scripts/
 Include/
 pyvenv.cfg
 share/
+
+
+models/
+app/episodes/
+drafts/draft_01/gymnasium/outputs_dqn/
+drafts/draft_01/gymnasium/outputs_ppo/
