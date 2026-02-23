@@ -18,7 +18,22 @@ pyvenv.cfg
 share/
 
 
-models/
+models/dqn/*/
+!models/dqn/2026-02-23_02_53_32
+!models/dqn/2026-02-23_03_41_09
+!models/dqn/2026-02-23_04_28_07
+
+models/ppo/*/
+!models/ppo/2026-02-23_05_15_27/
+!models/ppo/2026-02-23_05_35_37/
+!models/ppo/2026-02-23_05_58_38/
+
+models/ga/*/
+!models/ga/2026-02-22_22_20_45
+!models/ga/2026-02-22_22_39_48
+!models/ga/2026-02-22_23_04_00
+
+
 app/episodes/
 drafts/draft_01/gymnasium/outputs_dqn/
 drafts/draft_01/gymnasium/outputs_ppo/
