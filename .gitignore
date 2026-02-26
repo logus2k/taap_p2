@@ -37,3 +37,5 @@ models/ga/*/
 app/episodes/
 drafts/draft_01/gymnasium/outputs_dqn/
 drafts/draft_01/gymnasium/outputs_ppo/
+
+delivery/models/
