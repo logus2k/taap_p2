@@ -1,0 +1,13 @@
+numpy>=2.4
+pandas>=3.0
+matplotlib>=3.10
+scipy>=1.17
+gymnasium[box2d]>=1.2
+stable-baselines3>=2.7
+torch>=2.10
+imageio>=2.37
+swig>=4.4
+pillow>=11.3
+fastapi>=0.129
+python-socketio>=5.16
+uvicorn>=0.41
